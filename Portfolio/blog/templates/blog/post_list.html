@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-md-12 col-sm-12">
+      {% for post in post_list  %}
+        <h2><a href="{% url 'blog:post_detail' pk=post.pk %}">{{post.name}}</a>
+        <br><small class="text-muted">{{post.date}}</small><br></h2>
+        {% if post.image %}
+          <div id='postimage' class="col-lg-8 col-xs-12 col-xl-7 col-md-12 col-sm-12">
+            <img src="{{ post.image.path.url }}" class="img-fluid" alt="Responsive image">
+          </div>
+        {% endif %}
+        <p>{{post.text|safe}}</p>
+        <br>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

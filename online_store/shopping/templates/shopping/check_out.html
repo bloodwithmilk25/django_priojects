@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% if user.is_authenticated %}
+  <br>
+  <div class="container">
+    <form method="post">
+          {% csrf_token %}
+          <div class="col-sm-4">
+            {{ form.first_name|as_crispy_field }}
+            {{ form.last_name|as_crispy_field }}
+          </div>
+        <div class="col-sm-4">
+          {{ form.phone|as_crispy_field }}
+        </div>
+        <div class="col-sm-6">
+          {{ form.shipping_type|as_crispy_field }}
+          {{ form.shipping_adress|as_crispy_field }}
+          {{ form.comments|as_crispy_field }}
+          <input type="submit" class="btn btn-succes" value="Order">
+        </div>
+
+    </form>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $("#id_shipping_type").on('click', function(){
+        shipping_type = $(this).val()
+        if(shipping_type == 'pickup'){
+          $('#div_id_shipping_adress').hide()
+        }
+        if(shipping_type == 'shipping'){
+          $('#div_id_shipping_adress').show()
+        }
+      })
+    })
+      $(document).ready(function(){
+        $("#id_first_name").val('{{user.first_name}}')
+        $("#id_last_name").val('{{user.last_name}}')
+      })
+  </script>
+{% else %}
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">You must be logged in to make an order!</h1>
+      <p class="lead">Please <a href="{% url 'shop:login' %}">login</a> or <a href="{% url 'shop:register' %}">register</a> now!</p>
+    </div>
+  </div>
+{% endif %}
+{% endblock %}

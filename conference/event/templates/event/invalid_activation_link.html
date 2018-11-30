@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1 class="display-4">Your activation link is invalid</h1>
+    <p class="lead"><strong>We are really sorry about this, try register one more time or contact our support!</strong></p>
+    <a class="btn btn-primary btn-lg" href="{% url 'event:home' %}" role="button">Home Page</a>
+  </div>
+{% endblock content %}

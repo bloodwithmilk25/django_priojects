@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 col-sm-12">
+        <h2>{{post.name}}
+        <br><small class="text-muted">{{post.date}}</small><br></h2>
+        {% if post.image %}
+          <div id='postimage' class="col-lg-8 col-md-10 col-sm-12">
+            <img src="{{ post.image.path.url }}" class="img-fluid" alt="Responsive image">
+          </div>
+        {% endif %}
+        <p>{{post.text|safe}}</p>
+        {# comments #}
+        {% for comment in post.comments.all %}
+            <hr>
+            <h5>Comment by: <strong>{{ comment.author }}</strong></h5>
+            <h6>{{ comment.text }}</h6>
+            {{ comment.created_date }}
+            <br><br>
+          {% empty %}
+              <br><hr>
+              <p>No comments posted.</p>
+        {% endfor %}
+        <br>
+        <a class="btn btn-primary btn-comment" href="{% url 'blog:add_comment_to_post' pk=post.pk %}">Add comment</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

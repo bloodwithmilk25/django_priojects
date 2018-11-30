@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  {% if cart.items.all %}
+    <div class="my-cart">
+      <h3 class='text-center'>Your Cart:</h3>
+      <br>
+      <table class="table">
+          <tr>
+              <td class="text-center"><strong>Product</strong></td>
+              <td class="text-center"><strong>Quantity</strong></td>
+              <td class="text-center"><strong>Price $</strong></td>
+              <td class="text-center"></td>
+          </tr>
+          {% for item in cart.items.all %}
+          <tr class='cart-item-{{item.product.id}}'>
+              <td class="text-center"><strong>{{item.product.title}}</strong></td>
+              <td class="text-center">
+                <strong>
+                  <form action="" method="GET">
+                      <input type="number" min ="0" name="quantity" value="{{item.quantity}}" class='item-quantity' data-id="{{item.id}}" style="width: 37px;">
+                  </form>
+                </strong>
+              </td>
+              <td class="text-center"><strong id="item-price-{{ item.id }}">{{item.item_price}}</strong></td>
+              <td class="text-center"><strong><a href="#" class="remove_from_cart" data-slug="{{item.product.slug}}" data-id="{{item.product.id}}" min='1'><button class="btn btn-danger">Remove from cart</button></a></strong></td>
+          </tr>
+          {% endfor %}
+          <tr><td class="text-center"><strong>Total:</strong></td>
+              <td></td>
+              <td class="text-center"><strong id="total_amount">{{ cart.total_amount }}</strong></td><td></td>
+          </tr>
+          <tr>
+            <td></td><td></td><td></td><td class="text-center"><a href="{% url 'shop:checkout' id=cart.id %}"><button class='btn btn-info'>Check out!</button></a></td>
+          </tr>
+      </table>
+    </div>
+  {% else %}
+    <br><br>
+    <h2 class="empty-cart text-center">Your cart is empty!</h2>
+  {% endif %}
+</div>
+<script>
+  $(document).ready(function(){
+    $('.remove_from_cart').on('click', function(event){
+      event.preventDefault()
+      slug = $(this).attr('data-slug')
+      item_id = $(this).attr('data-id')
+      data = {
+        slug: slug
+      }
+      $.ajax({
+        type: "GET",
+        url: "{% url 'shop:remove_from_cart' %}",
+        data: data,
+        success: function(data){
+          // уменьшает значение в счётчике корзины
+          $("#cart_count").html(data.cart_total)
+          // удаляем из списка без перезагрузки страницы
+          $('.cart-item-'+item_id).hide()
+          $("#total_amount").html(parseFloat(data.total_amount).toFixed(2))
+          if (parseInt(data.cart_total) == 0){
+            $('.my-cart').hide()
+            $('.container').html('<br><br><h2 class="empty-cart text-center">Your cart is empty!</h2>')
+          }
+
+        }
+        })
+      })
+    })
+
+  $(document).ready(function(){
+    $('.item-quantity').on('click',function(){
+      quantity = $(this).val()
+      item_id = $(this).attr('data-id')
+      data = {
+        quantity: quantity,
+        item_id:item_id
+      }
+      $.ajax({
+        type: "GET",
+        url: '{% url "shop:change_item_quantity" %}',
+        data: data,
+        success: function(data){
+          $('#item-price-'+item_id).html(parseFloat(data.item_price).toFixed(2))
+          $("#total_amount").html(parseFloat(data.total_amount).toFixed(2))
+        }
+      })
+    })
+  })
+</script>
+{% endblock %}

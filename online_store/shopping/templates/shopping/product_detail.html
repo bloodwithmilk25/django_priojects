@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h1>{{product.title}}</h1>
+  <img src="{{ product.image.url }}" alt="">
+  <div class="row justify-content-around">
+    <h3>Price: {{product.price}} $</h3>
+    <strong><a href="#" class="add_to_cart" data-slug="{{product.slug}}"><button class='btn btn-danger'>Add To cart</button></a></strong>
+  </div>
+  <br>
+  <p>{{product.description}}</p>
+</div>
+<script>
+  $(document).ready(function(){
+    $('.add_to_cart').on('click', function(event){
+      event.preventDefault()
+      slug = $(this).attr('data-slug')
+      data = {
+        slug: slug
+      }
+      $.ajax({
+        type: "GET",
+        url: "{% url 'shop:add_to_cart' %}",
+        data: data,
+        success: function(data){
+          // увеличивает значение в счётчике корзины
+          $("#cart_count").html(data.cart_total)
+        }
+      })
+    })
+  })
+</script>
+{% endblock content %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+  <div id="events">
+  {% for event in events %}
+    <div class="row">
+        <div class="col-12">
+            <p class="search-event-name"><a class="search-link" href="{{event.get_absolute_url}}">{{event.name}}</a></p>
+            <p class="search-date">{{ event.date_start|date:"d.m.Y" }}</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-5 col-md-5">
+        {% if event.logo %}
+          <a class="search-link" href="{{event.get_absolute_url}}"><img class="img-fluid" src="{{event.logo.url}}"></a>
+        {% endif %}
+      </div>
+      <div class="col-12 col-lg-7 col-md-7">
+        <p class="search-event-description">{{event.short_description}}<a href="{{event.get_absolute_url}}">...</a></p>
+      </div>
+    </div>
+    <hr>
+  {% endfor %}
+  </div>
+
+{% if events.has_next or events.has_previous %}
+<!-- Pagination -->
+<div class="pagination justify-content-center">
+    <span class="step-links">
+        {% if events.has_previous %}
+            <a href="?page={{ events.previous_page_number }}" id="prev"><i class='fas fa-chevron-circle-left arrow'></i></a>
+        {% endif %}
+
+        <span class="current">
+            <b>{{ events.number }}</b> из <b>{{ events.paginator.num_pages }}</b>
+        </span>
+
+        {% if events.has_next %}
+            <a href="?page={{ events.next_page_number }}" id="next"><i class='fas fa-chevron-circle-right arrow'></i></a>
+        {% endif %}
+    </span>
+</div>
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+
+body{
+  position: relative;
+  background-color: white;
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-right: 3%;
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+}
+.navbar-brand{
+  font-size: 2em;
+}
+.nav-link{
+  padding-bottom: 0px;
+}
+a {color: black;}      /* unvisited link */
+a:visited {color: black;}  /* visited link */  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+#mainNav{
+  padding-top: 3%;
+  margin-left: 2.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#postimage{
+  position: relative;
+  margin-left: -1.5%;
+}
+
+.image{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

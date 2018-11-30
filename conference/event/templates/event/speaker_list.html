@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container-fluid" style="margin-top: 1%;">
+  {% for speaker in speaker_list %}
+    {% if forloop.counter0|divisibleby:2 %}
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <div class="jumbotron" style="width:87%">
+            <div class="media">
+              <img id="speakepic" class="align-self-center mr-3" src="{{speaker.photo.url}}" height="200px" alt="Generic placeholder image">
+                <div class="media-body">
+                  <h2 id="speakername" class="mt-0">{{speaker}}</h2>
+                  <h3>{{speaker.position}}</h3>
+                  <h3 class="mb-0">{{speaker.company}}</h3>
+                </div>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="col-lg-5 col-md-6">
+          <div class="jumbotron" style="width:87%">
+            <div class="media">
+              <img id="speakepic" class="align-self-center mr-3" src="{{speaker.photo.url}}" height="200px" alt="Generic placeholder image">
+                <div class="media-body">
+                  <h2 id="speakername" class="mt-0">{{speaker}}</h2>
+                  <h3>{{speaker.position}}</h3>
+                  <h3 class="mb-0">{{speaker.company}}</h3>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+{% endblock content %}
