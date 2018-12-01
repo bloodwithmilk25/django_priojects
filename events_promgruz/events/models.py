@@ -2,32 +2,12 @@ from django.core.validators import RegexValidator
 from django.template.defaultfilters import slugify
 from django.urls import reverse
 from django.db import models
+
 from transliterate import translit
 from django_google_maps import fields as map_fields
 import datetime
 
-
-# helper function to generate image names
-def image_name(instance, filename):
-    """
-    filename consists of transliterated filename and extension
-    it is put it the folder with name that corresponds with instance name
-    if name was in latin it stays the same
-    """
-    ext = filename.split('.')[1]
-    filename = translit(filename.split('.')[0][:20], 'ru', reversed=True).replace(" ", "") + '.' + ext
-    try:
-        if instance.path:  # if it's a call from "Image" model
-            if instance.location:
-                location_name = translit(instance.location.name, 'ru', reversed=True).replace(" ", "")
-                return "{}/{}".format(location_name, filename)
-            else:
-                event_name = translit(instance.event.name, 'ru', reversed=True).replace(" ", "")
-                return "{}/{}".format(event_name, filename)
-    except AttributeError:
-        #  if it's a call from other models, not "Image"
-        name = translit(instance.name[:35], 'ru', reversed=True).replace(" ", "")
-        return "{}/{}".format(name, filename)
+from .utils import image_name
 
 
 class Category(models.Model):
@@ -50,17 +30,18 @@ class Tag(models.Model):
 
 
 class Location(models.Model):
-    name = models.CharField(max_length=50)
-    logo = models.ImageField(upload_to=image_name, blank=True)
+    name = models.CharField(max_length=50, verbose_name='Название места')
+    logo = models.ImageField(blank=True, upload_to=image_name, verbose_name='Логотип')
     # model "image" is used for the gallery, access it via the 'images' attribute
-    country = models.CharField(max_length=50, blank=True)
-    city = models.CharField(max_length=50, blank=True)
-    address = map_fields.AddressField(max_length=200, blank=True)
-    geolocation = map_fields.GeoLocationField(max_length=100, help_text="XX.XXX ,YY.YYYY", blank=True)
+    country = models.CharField(blank=True, max_length=50, verbose_name='Страна')
+    city = models.CharField(blank=True, max_length=50, verbose_name='Город')
+    address = map_fields.AddressField(blank=True, max_length=200, verbose_name='Адрес')
+    geolocation = map_fields.GeoLocationField(blank=True, max_length=100, help_text="XX.XXX ,YY.YYYY",
+                                              verbose_name='Координаты')
     phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$')
-    phone_number = models.CharField(validators=[phone_regex], max_length=15, blank=True)
-    web_site = models.URLField(blank=True)
-    email = models.EmailField(blank=True)
+    phone_number = models.CharField(blank=True, validators=[phone_regex], max_length=15, verbose_name='Телефон')
+    web_site = models.URLField(blank=True, verbose_name='Сайт')
+    email = models.EmailField(blank=True, verbose_name='Email')
 
     def __str__(self):
         return self.name
@@ -100,8 +81,7 @@ class Event(models.Model):
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='events', null=True, blank=True,
                                  verbose_name='Категория')
     tag = models.ManyToManyField(Tag, related_name='events', blank=True, verbose_name='Тэги')
-    year = models.IntegerField(choices=year_choices(), default=datetime.date.today().year, blank=True,
-                               verbose_name='Год', help_text='Подтягивается автоматически из даты', editable=False)
+    year = models.IntegerField(default=datetime.date.today().year, verbose_name='Год', editable=False)
     logo = models.ImageField(blank=True, upload_to=image_name, help_text="345x280", verbose_name='Логотип')
     banner = models.ImageField(blank=True, upload_to=image_name, help_text="Ширина 1110px", verbose_name='Баннер')
     date_start = models.DateTimeField(null=True, blank=True, verbose_name='Начало')
@@ -137,7 +117,6 @@ class Event(models.Model):
         else:
             return True
 
-
     def get_absolute_url(self):
         return reverse("events:event_detail", kwargs={"slug": self.slug})
 
@@ -163,13 +142,13 @@ class Event(models.Model):
 
 
 class Image(models.Model):
-    path = models.ImageField(upload_to=image_name)
-    location = models.ForeignKey(Location, on_delete=models.CASCADE, related_name='images', null=True, blank=True,
-                                 help_text="800x530px")
+    path = models.ImageField(upload_to=image_name, verbose_name='Изображение')
+    location = models.ForeignKey(Location, on_delete=models.CASCADE, null=True, blank=True, related_name='images',
+                                 help_text="800x530px", verbose_name='Место')
     # image instance can be related to location or event if needed
-    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='images', null=True, blank=True)
+    event = models.ForeignKey(Event, null=True, blank=True, verbose_name='Событие', on_delete=models.CASCADE, related_name='images')
     order = models.DecimalField(max_digits=5, decimal_places=2, blank=True, null=True,
-                                help_text="Указать если нужно задать свой порядок картинкам")
+                                help_text="Указать если нужно задать свой порядок картинкам", verbose_name='Порядок')
 
     def __str__(self):
         return 'Image related to ' + str(self.location) if self.location else str(self.event)
