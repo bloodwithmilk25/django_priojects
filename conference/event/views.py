@@ -10,7 +10,7 @@ from .tokens import account_activation_token
 from .forms import VisitorForm
 from .models import Visitor, Speaker
 # Create your views here.
-
+# few
 # commit
 # test
 class HomePageView(TemplateView):
