@@ -23,7 +23,7 @@ from blog import urls
 urlpatterns = [
     re_path(r"^$", views.HomePageView.as_view(), name="home"),
     path('enter/', admin.site.urls),
-    re_path(r'blog/',include('blog.urls',namespace='blog')),
-    re_path(r'about/$',views.AboutView.as_view(),name='about'),
-    re_path(r'contact/$',views.ContactView.as_view(),name='contact'),
+    re_path(r'blog/', include('blog.urls',namespace='blog')),
+    re_path(r'about/$', views.AboutView.as_view(),name='about'),
+    re_path(r'contact/$', views.ContactView.as_view(),name='contact'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

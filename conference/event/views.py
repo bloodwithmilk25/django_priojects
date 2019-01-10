@@ -12,7 +12,7 @@ from .models import Visitor, Speaker
 # Create your views here.
 
 # commit
-
+# test
 class HomePageView(TemplateView):
     template_name = 'home.html'
 
@@ -38,8 +38,8 @@ class VisitorRegistration(CreateView):
             message = render_to_string('visitor_activate_email.html', {
                 'visitor': visitor.first_name +' '+ visitor.last_name,
                 'domain': current_site.domain,
-                'uid':urlsafe_base64_encode(force_bytes(visitor.pk)).decode(),
-                'token':account_activation_token.make_token(visitor),
+                'uid': urlsafe_base64_encode(force_bytes(visitor.pk)).decode(),
+                'token': account_activation_token.make_token(visitor),
             })
             email = EmailMessage(mail_subject, message, to=[visitor.email])
             email.send()

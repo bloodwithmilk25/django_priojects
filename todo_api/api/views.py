@@ -48,8 +48,6 @@ class TodoDetailView(generics.RetrieveUpdateDestroyAPIView):
     def put(self, request, *args, **kwargs):
         try:
             a_todo = self.queryset.get(pk=kwargs["pk"])
-            print('a_todo---------------', a_todo)
-            print('a_todo---------------', request.data)  # {'completed': ['true']}
             serializer = TodosSerializer()
             updated_todo = serializer.update(a_todo, request.data)
             return Response(TodosSerializer(updated_todo).data)
