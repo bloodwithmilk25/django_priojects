@@ -11,7 +11,7 @@ from .forms import VisitorForm
 from .models import Visitor, Speaker
 # Create your views here.
 
-
+# commit
 
 class HomePageView(TemplateView):
     template_name = 'home.html'
