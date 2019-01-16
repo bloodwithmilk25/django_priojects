@@ -112,10 +112,7 @@ class Event(models.Model):
         if date_start >= today  >>> False
         else >>> True
         """
-        if self.date_start >= datetime.datetime.now(self.date_start.tzinfo):
-            return False
-        else:
-            return True
+        return self.date_start <= datetime.datetime.now(self.date_start.tzinfo)
 
     def get_absolute_url(self):
         return reverse("events:event_detail", kwargs={"slug": self.slug})
