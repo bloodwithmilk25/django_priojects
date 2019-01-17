@@ -2,8 +2,8 @@ from django.urls import re_path
 from django.contrib.auth import views as auth_views
 from django.views.generic import TemplateView
 
-from .forms import UserAuthenticationForm
 from . import views
+from .forms import UserAuthenticationForm
 
 urlpatterns = [
     re_path(r"^sign-up/$", views.SignUp.as_view(), name="sign_up"),

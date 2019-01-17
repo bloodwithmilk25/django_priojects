@@ -14,13 +14,12 @@ class MyUserAdmin(UserAdmin):
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
     readonly_fields = ('date_joined',)
-    list_display = ('email', 'date_joined', 'is_admin', 'is_active')
+    list_display = ('email', 'full_name', 'date_joined', 'is_admin', 'is_active')
     list_filter = ('is_admin',)
     fieldsets = (
         (None, {'fields': ('email', 'password', )}),
         ('Personal info', {'fields': ('first_name', 'last_name', 'date_of_birth', 'date_joined', 'avatar')}),
-        ('Permissions', {'fields': (
-            'is_admin', 'is_active', 'groups', 'user_permissions')}),
+        ('Permissions', {'fields': ('is_admin', 'is_active', 'groups', 'user_permissions')}),
     )
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
     # overrides get_fieldsets to use this attribute when creating a user.
@@ -31,8 +30,8 @@ class MyUserAdmin(UserAdmin):
             }
         ),
     )
-    search_fields = ('email', 'is_admin')
-    ordering = ('email',)
+    search_fields = ('email', 'is_admin', 'first_name', 'last_name')
+    ordering = ('-date_joined',)  # newest users first
     filter_horizontal = ()
 
 

@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm, ReadOnlyPasswordHashField
-from django.utils.translation import gettext, gettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from .models import User
 
@@ -15,7 +15,7 @@ class UserCreationForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('email', 'first_name', 'last_name', 'date_of_birth')
+        fields = ('email', 'first_name', 'last_name', 'date_of_birth', 'password1', 'password2')
 
     def clean_password2(self):
         # Check that the two password entries match

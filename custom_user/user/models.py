@@ -1,4 +1,3 @@
-# https://docs.djangoproject.com/en/1.9/topics/auth/customizing/#a-full-example
 from django.db import models
 from django.core.mail import send_mail
 from django.contrib.auth.models import PermissionsMixin
@@ -28,18 +27,18 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name = _('user')
         verbose_name_plural = _('users')
 
-    def get_full_name(self):
+    def full_name(self):
         """
         Returns the first_name plus the last_name, with a space in between.
         """
         full_name = f'{self.first_name} {self.last_name}'
         return full_name.strip()
 
-    def get_short_name(self):
+    def short_name(self):
         """
         Returns the short name for the user.
         """
-        return self.first_name
+        return f'{self.first_name} {self.last_name[0]}'
 
     def email_user(self, subject, message, from_email=None, **kwargs):
         """
@@ -49,6 +48,4 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     @property
     def is_staff(self):
-        "Is the user a member of staff?"
-        # Simplest possible answer: All admins are staff
         return self.is_admin

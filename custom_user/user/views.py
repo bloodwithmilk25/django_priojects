@@ -1,14 +1,15 @@
-from .forms import UserCreationForm
-from django.http import HttpResponse
-from django.shortcuts import render, redirect
-from django.contrib.auth import login
-from django.contrib.sites.shortcuts import get_current_site
-from django.utils.encoding import force_bytes, force_text
-from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-from django.template.loader import render_to_string
-from .tokens import account_activation_token
-from .models import User
 from django.views import View
+from django.http import HttpResponse
+from django.contrib.auth import login
+from django.shortcuts import render, redirect
+from django.template.loader import render_to_string
+from django.utils.encoding import force_bytes, force_text
+from django.contrib.sites.shortcuts import get_current_site
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+
+from .models import User
+from .forms import UserCreationForm
+from .tokens import account_activation_token
 
 
 class SignUp(View):
@@ -36,7 +37,12 @@ class SignUp(View):
             })
             user.email_user(mail_subject, message)
             return redirect('confirm')
-        return render(request, self.template_name, form)
+
+        context = {
+            'form': form
+        }
+        
+        return render(request, self.template_name, context)
 
 
 def activate(request, uidb64, token):
