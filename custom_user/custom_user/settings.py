@@ -55,7 +55,7 @@ ROOT_URLCONF = 'custom_user.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'user/templates/user')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -74,6 +74,10 @@ WSGI_APPLICATION = 'custom_user.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.AllowAllUsersModelBackend",
+]
 
 DATABASES = {
     'default': {
@@ -128,3 +132,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# email
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'emailconfiramation@gmail.com'
+EMAIL_HOST_PASSWORD = 'ReVeTaSt0gNe2#'
+EMAIL_PORT = 587

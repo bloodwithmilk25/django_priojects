@@ -1,5 +1,5 @@
 from django import forms
-from django.contrib.auth.forms import ReadOnlyPasswordHashField
+from django.contrib.auth.forms import AuthenticationForm, ReadOnlyPasswordHashField
 from django.utils.translation import gettext, gettext_lazy as _
 
 from .models import User
@@ -25,13 +25,13 @@ class UserCreationForm(forms.ModelForm):
             raise forms.ValidationError("Passwords don't match")
         return password2
 
-    def save(self, commit=True):
-        # Save the provided password in hashed format
-        user = super(UserCreationForm, self).save(commit=False)
-        user.set_password(self.cleaned_data["password1"])
-        if commit:
-            user.save()
-        return user
+
+class UserAuthenticationForm(AuthenticationForm):
+    """
+     Allow users with is_active = False to login
+    """
+    def confirm_login_allowed(self, user):
+        pass
 
 
 class UserChangeForm(forms.ModelForm):

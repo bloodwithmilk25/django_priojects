@@ -14,7 +14,7 @@ class MyUserAdmin(UserAdmin):
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
     readonly_fields = ('date_joined',)
-    list_display = ('email', 'date_joined', 'is_admin')
+    list_display = ('email', 'date_joined', 'is_admin', 'is_active')
     list_filter = ('is_admin',)
     fieldsets = (
         (None, {'fields': ('email', 'password', )}),
