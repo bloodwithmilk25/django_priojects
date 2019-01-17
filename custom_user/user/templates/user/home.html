@@ -15,5 +15,7 @@
   <p>You are not logged in</p>
   <a href="{% url 'login' %}">login</a>
   <a href="{% url 'sign_up' %}">sign up</a>
+  <p>Forgot password?</p>
+  <p><a href="{% url 'password_reset' %}">password reset</a></p>
 {% endif %}
 {% endblock %}

@@ -1,14 +1,13 @@
-from .forms import UserAuthenticationForm, UserCreationForm
+from .forms import UserCreationForm
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.template.loader import render_to_string
 from .tokens import account_activation_token
 from .models import User
-from django.core.mail import EmailMessage
 from django.views import View
 
 
@@ -21,7 +20,6 @@ class SignUp(View):
         return render(request, self.template_name, {'form': form})
 
     def post(self, request):
-        done = False
         form = self.form(request.POST)
         if form.is_valid():
             user = form.save(commit=False)
@@ -36,19 +34,9 @@ class SignUp(View):
                 'uid': urlsafe_base64_encode(force_bytes(user.pk)).decode(),
                 'token': account_activation_token.make_token(user),
             })
-            to_email = form.cleaned_data.get('email')
-            email = EmailMessage(
-                mail_subject, message, to=[to_email]
-            )
-            email.send()
-            done = True
-
-        context = {
-            'form': form,
-            'done': done
-        }
-
-        return render(request, self.template_name, context)
+            user.email_user(mail_subject, message)
+            return redirect('confirm')
+        return render(request, self.template_name, form)
 
 
 def activate(request, uidb64, token):
@@ -65,29 +53,3 @@ def activate(request, uidb64, token):
     else:
         return HttpResponse('Activation link is invalid!')
 
-
-# class Login(View):
-#     template_name = "login.html"
-#     form = UserAuthenticationForm
-#
-#     def get(self, request):
-#         form = self.form()
-#         return render(request, self.template_name, {'form': form})
-#
-#     def post(self, request):
-#         fail = False
-#         form = self.form(request.POST)
-#         if form.is_valid():
-#             cd = form.cleaned_data
-#             user = authenticate(email=cd['email'], password=cd['password'])
-#             if user is not None:
-#                 login(request, user)
-#                 return redirect('home')
-#             else:
-#                 fail = True
-#
-#         context = {
-#             'form': form,
-#         }
-#
-#         return render(request, self.template_name, context)
