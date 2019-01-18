@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.utils.translation import ugettext_lazy as _
+from django.shortcuts import redirect
 
 from .managers import UserManager
 from .utils import image_name
@@ -12,11 +13,13 @@ class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(_('email address'), unique=True)
     first_name = models.CharField(_('first name'), max_length=30, blank=True)
     last_name = models.CharField(_('last name'), max_length=30, blank=True)
+    avatar = models.ImageField(upload_to=image_name, null=True, blank=True)
+
     date_of_birth = models.DateField(_('date of birth'), blank=True, null=True)
     date_joined = models.DateTimeField(_('date joined'), auto_now_add=True)
+
     is_active = models.BooleanField(_('active'), default=True)
     is_admin = models.BooleanField(default=False)
-    avatar = models.ImageField(upload_to=image_name, null=True, blank=True)
 
     objects = UserManager()
 
@@ -49,3 +52,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     @property
     def is_staff(self):
         return self.is_admin
+
+    @staticmethod
+    def get_absolute_url():
+        return redirect('home')

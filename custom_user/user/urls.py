@@ -11,8 +11,9 @@ urlpatterns = [
     re_path(r"^login/$", auth_views.LoginView.as_view(
         authentication_form=UserAuthenticationForm), name="login"),
 
-    re_path(r'^confirm/$', TemplateView.as_view(template_name="registration/confirm.html"),
-            name='confirm'),
+    re_path(r"^update/$", views.update_user, name="update_user"),
+
+    re_path(r'^confirm/$', TemplateView.as_view(template_name="registration/confirm.html"), name='confirm'),
 
     re_path(r'^activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
             views.activate, name='activate'),

@@ -36,7 +36,7 @@ class UserAuthenticationForm(AuthenticationForm):
 
 class UserChangeForm(forms.ModelForm):
     """
-    A form for updating users. Includes all the fields on
+    A form for updating users by admins. Includes all the fields on
     the user, but replaces the password field with admin's
     password hash display field.
     """
@@ -56,6 +56,7 @@ class UserChangeForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         password = self.fields.get('password')
+
         if password:
             password.help_text = password.help_text.format('../password/')
         user_permissions = self.fields.get('user_permissions')
@@ -67,3 +68,11 @@ class UserChangeForm(forms.ModelForm):
         # This is done here, rather than on the field, because the
         # field does not have access to the initial value
         return self.initial["password"]
+
+
+class UserUpdateForm(forms.ModelForm):
+
+    class Meta:
+        model = User
+        fields = ('email', 'first_name', 'last_name', 'avatar', 'date_of_birth')
+

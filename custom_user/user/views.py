@@ -3,13 +3,14 @@ from django.http import HttpResponse
 from django.contrib.auth import login
 from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
+from django.contrib.auth.decorators import login_required
 from django.utils.encoding import force_bytes, force_text
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 
 from .models import User
-from .forms import UserCreationForm
 from .tokens import account_activation_token
+from .forms import UserCreationForm,  UserUpdateForm
 
 
 class SignUp(View):
@@ -59,3 +60,13 @@ def activate(request, uidb64, token):
     else:
         return HttpResponse('Activation link is invalid!')
 
+
+@login_required
+def update_user(request):
+    form = UserUpdateForm(request.POST or None, request.FILES or None, instance=request.user)
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+
+    return render(request, 'update_user.html', {'form': form})
