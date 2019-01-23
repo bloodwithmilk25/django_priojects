@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.first_name }}!
+  {% if not user.is_verified %}
+    Activate your account via email!
+  {% endif %}
+  {% if user.avatar %}<p><img width="250px" src="{{ user.avatar.url }}"></p>{% endif %}
+  <p><a href="{% url 'logout' %}">logout</a></p>
+  <p><a href="{% url 'password_change' %}">password change</a></p>
+  <p><a href="{% url 'update_user' %}">update profile</a></p>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+  <a href="{% url 'sign_up' %}">sign up</a>
+  <p>Forgot password?</p>
+  <p><a href="{% url 'password_reset' %}">password reset</a></p>
+{% endif %}
+{% endblock %}

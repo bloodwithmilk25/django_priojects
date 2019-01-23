@@ -1,11 +1,16 @@
 from django.db import models
+from django.db.models import signals
 from django.core.mail import send_mail
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.base_user import AbstractBaseUser
 from django.utils.translation import ugettext_lazy as _
 from django.shortcuts import redirect
+from django.utils.http import urlsafe_base64_encode
+from django.utils.encoding import force_bytes
+from django.template.loader import render_to_string
 
 from .managers import UserManager
+from .tokens import account_activation_token
 from .utils import image_name
 
 
@@ -20,6 +25,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     is_active = models.BooleanField(_('active'), default=True)
     is_admin = models.BooleanField(default=False)
+    is_verified = models.BooleanField('verified', default=False)
 
     objects = UserManager()
 
@@ -55,4 +61,21 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     @staticmethod
     def get_absolute_url():
-        return redirect('home')
+        return redirect('profile')
+
+
+def user_post_save(instance, created, *args, **kwargs):
+    # if it's a newly created but not verified user
+    if created and not instance.is_verified:
+        # Send verification email
+        mail_subject = 'Activate your account.'
+        message = render_to_string('account_activation_email.html', {
+            'user': instance,
+            'domain': 'http://localhost:8000',
+            'uid': urlsafe_base64_encode(force_bytes(instance.pk)).decode(),
+            'token': account_activation_token.make_token(instance),
+        })
+        instance.email_user(mail_subject, message)
+
+
+signals.post_save.connect(user_post_save, sender=User)

@@ -5,10 +5,10 @@
 {% block content %}
 {% if user.is_authenticated %}
   Hi {{ user.first_name }}!
-  {% if not user.is_active %}
+  {% if not user.is_verified %}
     Activate your account via email!
   {% endif %}
-  {% if user.avatar %}}<p><img width="250px" src="{{ user.avatar.url }}"></p>{% endif %}
+  {% if user.avatar %}<p><img width="250px" src="{{ user.avatar.url }}"></p>{% endif %}
   <p><a href="{% url 'logout' %}">logout</a></p>
   <p><a href="{% url 'password_change' %}">password change</a></p>
   <p><a href="{% url 'update_user' %}">update profile</a></p>
