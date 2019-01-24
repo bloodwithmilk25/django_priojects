@@ -9,6 +9,10 @@ class Post(models.Model):
     title = models.CharField('Title', max_length=200)
     content = models.TextField('Content')
     slug = models.SlugField('Slug')
+    view_count = models.IntegerField("View Count", default=0)
 
     def __str__(self):
         return f'"{self.title}" by {self.author}'
+
+    def get_absolute_url(self):
+        return f'/posts/{self.slug}'

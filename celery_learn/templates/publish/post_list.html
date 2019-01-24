@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post list</title>
+</head>
+<body>
+    {% for post in post_list %}
+        <p><a href="{{ post.get_absolute_url }}"><b>{{ post.title }}</b></a></p>
+    {% endfor %}
+</body>
+</html>

@@ -18,13 +18,14 @@ from django.urls import path, include, re_path
 from django.conf.urls.static import static
 from django.conf import settings
 
-from publish.views import view_post
+from publish.views import view_post, PostList
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('user.urls')),
-    re_path(r'^(?P<slug>[a-zA-Z0-9\-]+)/$', view_post, name='view_post')
+    re_path(r'^posts/(?P<slug>[a-zA-Z0-9\-]+)/$', view_post, name='view_post'),
+    re_path(r'^$', PostList.as_view(), name='post_list')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
