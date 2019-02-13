@@ -76,4 +76,4 @@ def resent_email(request):
             'token': account_activation_token.make_token(user),
         })
         user.email_user(mail_subject, message)
-        return redirect('profile')
+    return redirect('profile')
