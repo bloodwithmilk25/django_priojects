@@ -7,6 +7,7 @@
   Hi {{ user.first_name }}!
   {% if not user.is_verified %}
     Activate your account via email!
+    Didn't get an email? <a href="{% url 'resent_email' %}">Resent email!</a>
   {% endif %}
   {% if user.avatar %}<p><img width="250px" src="{{ user.avatar.url }}"></p>{% endif %}
   <p><a href="{% url 'logout' %}">logout</a></p>
