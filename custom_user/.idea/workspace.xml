@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93b5354c-125e-47d2-a181-e81bb63b094a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../celery_learn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../celery_learn/celery_learn/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/celery_learn/celery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../celery_learn/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../celery_learn/user/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/user/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/custom_user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/custom_user.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="93b5354c-125e-47d2-a181-e81bb63b094a" name="Default" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom_user/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_user/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
+            <state relative-caret-position="-1091">
               <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="45" />
             </state>
           </provider>
@@ -38,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1794">
-              <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+            <state relative-caret-position="322">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -62,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/user/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="77" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
+            <state relative-caret-position="437">
+              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -154,9 +143,9 @@
         <option value="$PROJECT_DIR$/user/forms.py" />
         <option value="$PROJECT_DIR$/custom_user/settings.py" />
         <option value="$PROJECT_DIR$/user/models.py" />
-        <option value="$PROJECT_DIR$/user/views.py" />
         <option value="$PROJECT_DIR$/user/urls.py" />
         <option value="$PROJECT_DIR$/templates/user/profile.html" />
+        <option value="$PROJECT_DIR$/user/views.py" />
       </list>
     </option>
   </component>
@@ -287,8 +276,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django server.custom_user" />
       <item itemvalue="Python.manage" />
+      <item itemvalue="Django server.custom_user" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -328,7 +317,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1815000" />
+    <option name="totallyTimeSpent" value="1911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -348,7 +337,7 @@
       <window_info active="true" anchor="bottom" id="manage.py@custom_user" order="8" weight="0.34336677" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32879817" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3298872" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32962137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -481,7 +470,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="-1091">
           <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
@@ -498,15 +487,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/user/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="77" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
+        <state relative-caret-position="437">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1794">
-          <caret line="78" column="34" lean-forward="true" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
+        <state relative-caret-position="322">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
