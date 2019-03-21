@@ -17,6 +17,8 @@ urlpatterns = [
 
     re_path(r'^confirm/$', TemplateView.as_view(template_name="user/registration/confirm.html"), name='confirm'),
 
+    re_path(r'^resent-email/$', views.resent_email, name='resent_email'),
+
     re_path(r'^verify/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
             views.verify, name='verify'),
 

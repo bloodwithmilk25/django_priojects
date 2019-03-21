@@ -5,6 +5,9 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.utils.encoding import force_text
 from django.utils.http import urlsafe_base64_decode
+from django.utils.http import urlsafe_base64_encode
+from django.utils.encoding import force_bytes
+from django.template.loader import render_to_string
 
 from .models import User
 from .tokens import account_activation_token
@@ -58,3 +61,19 @@ def update_user(request):
             return redirect('profile')
 
     return render(request, 'user/update_user.html', {'form': form})
+
+
+@login_required
+def resent_email(request):
+    if request.method == 'GET':
+        user = request.user
+        print(user)
+        mail_subject = 'Activate your account.'
+        message = render_to_string('account_activation_email.html', {
+            'user': user,
+            'domain': 'http://localhost:8000',
+            'uid': urlsafe_base64_encode(force_bytes(user.pk)).decode(),
+            'token': account_activation_token.make_token(user),
+        })
+        user.email_user(mail_subject, message)
+    return redirect('profile')

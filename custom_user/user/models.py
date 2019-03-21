@@ -25,7 +25,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     is_active = models.BooleanField(_('active'), default=True)
     is_admin = models.BooleanField(default=False)
-    is_verified = models.BooleanField('verified', default=False)
+    is_verified = models.BooleanField(_('verified'), default=False)
 
     objects = UserManager()
 

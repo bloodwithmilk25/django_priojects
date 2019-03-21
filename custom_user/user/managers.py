@@ -30,6 +30,7 @@ class UserManager(BaseUserManager):
         """
         extra_fields.setdefault('is_admin', True)
         extra_fields.setdefault('is_superuser', True)
+        extra_fields.setdefault('is_verified', True)
 
         if extra_fields.get('is_admin') is not True:
             raise ValueError('Superuser must have is_admin=True.')

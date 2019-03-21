@@ -10,6 +10,7 @@ from celery_learn.celery import app
 
 # https://code.tutsplus.com/ru/tutorials/using-celery-with-django-for-background-task-processing--cms-28732
 
+
 @app.task
 def send_verification_email(user_id):
     UserModel = get_user_model()
