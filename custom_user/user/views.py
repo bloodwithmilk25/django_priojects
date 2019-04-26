@@ -1,6 +1,5 @@
 from django.views import View
 from django.http import HttpResponse
-from django.contrib.auth import login
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.utils.encoding import force_text
@@ -46,8 +45,7 @@ def verify(request, uidb64, token):
     if user is not None and account_activation_token.check_token(user, token):
         user.is_verified = True
         user.save()
-        login(request, user)
-        return redirect('profile')
+        return HttpResponse('Your account was activated!')
     else:
         return HttpResponse('Activation link is invalid!')
 
@@ -76,4 +74,10 @@ def resent_email(request):
             'token': account_activation_token.make_token(user),
         })
         user.email_user(mail_subject, message)
+    return redirect('profile')
+
+
+def confirm(request):
+    if request.method == "GET" and request.user.is_anonymous and not request.user.is_verified:
+        return render(request, "user/registration/confirm.html")
     return redirect('profile')

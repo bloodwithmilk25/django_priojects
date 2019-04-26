@@ -1,9 +1,11 @@
 from django.urls import re_path
 from django.contrib.auth import views as auth_views
 from django.views.generic import TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from . import views
 from .forms import UserAuthenticationForm
+
 
 urlpatterns = [
     re_path(r"^sign-up/$", views.SignUp.as_view(), name="sign_up"),
@@ -15,7 +17,7 @@ urlpatterns = [
 
     re_path('^$', TemplateView.as_view(template_name='user/profile.html'), name='profile'),
 
-    re_path(r'^confirm/$', TemplateView.as_view(template_name="user/registration/confirm.html"), name='confirm'),
+    re_path(r'^confirm/$', views.confirm, name='confirm'),
 
     re_path(r'^resent-email/$', views.resent_email, name='resent_email'),
 

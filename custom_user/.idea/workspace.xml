@@ -2,12 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b5354c-125e-47d2-a181-e81bb63b094a" name="Default" comment="update">
+      <change beforePath="$PROJECT_DIR$/../blog-channels" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-channels" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../celery_learn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../celery_learn/celery_learn/celery.py" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/celery_learn/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../celery_learn/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../celery_learn/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../celery_learn/user/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/../celery_learn/user/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conference/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../conference/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/custom_user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/custom_user.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/bloodwithmilk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/bloodwithmilk.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom_user/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_user/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/managers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../django-advanced-training-project" beforeDir="false" afterPath="$PROJECT_DIR$/../django-advanced-training-project" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,90 +32,75 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/custom_user$Test__user_tests_UserTest_test_users_with_same_emails.coverage" NAME="Test: user.tests.UserTest.test_users_with_same_emails Coverage Results" MODIFIED="1550240624967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/custom_user$Test__user_tests_UserTest_test_redirect_annonymous_user_from_confirm.coverage" NAME="Test: user.tests.UserTest.test_redirect_annonymous_user_from_confirm Coverage Results" MODIFIED="1550398955841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/custom_user$Test__user_tests_UserTest_test_not_show_confirm_view_to_verified.coverage" NAME="Test: user.tests.UserTest.test_not_show_confirm_view_to_verified Coverage Results" MODIFIED="1550356544050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/custom_user$Test__user_tests_UserTest_test_redirect_verified_user_from_confirm.coverage" NAME="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm Coverage Results" MODIFIED="1550399908803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/custom_user$Test__user_tests_UserTest_test_same_emails.coverage" NAME="Test: user.tests.UserTest.test_same_emails Coverage Results" MODIFIED="1550240153109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/custom_user$Test__user_tests_UserTest_test_new_user_verification.coverage" NAME="Test: user.tests.UserTest.test_new_user_verification Coverage Results" MODIFIED="1550352290770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/custom_user$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1550239571372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/custom_user$Test__user_tests_UserTest_test_confirm_view.coverage" NAME="Test: user.tests.UserTest.test_confirm_view Coverage Results" MODIFIED="1550355556852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/custom_user$Test__user_tests_UserTest_test_should_send_signal_on_save.coverage" NAME="Test: user.tests.UserTest.test_should_send_signal_on_save Coverage Results" MODIFIED="1550268652021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="custom_user" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/user/tests.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="542">
-                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-                  <folding>
-                    <element signature="e#0#32#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/user/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/user/managers.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/user/forms.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret lean-forward="true" />
-                  <folding>
-                    <element signature="e#0#24#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/user/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1071">
-                  <caret line="80" column="53" lean-forward="true" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/user/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1692">
-                  <caret line="80" column="53" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="53" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1196">
+              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="managers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/managers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom_user/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3105">
+              <caret line="135" selection-start-line="135" selection-end-line="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -168,19 +170,27 @@
         <option value="$PROJECT_DIR$/user/templates/user/update_user.html" />
         <option value="$PROJECT_DIR$/user/forms.py" />
         <option value="$PROJECT_DIR$/custom_user/settings.py" />
-        <option value="$PROJECT_DIR$/user/urls.py" />
         <option value="$PROJECT_DIR$/templates/user/profile.html" />
-        <option value="$PROJECT_DIR$/user/views.py" />
-        <option value="$PROJECT_DIR$/user/managers.py" />
         <option value="$PROJECT_DIR$/user/models.py" />
+        <option value="$PROJECT_DIR$/user/managers.py" />
+        <option value="$PROJECT_DIR$/user/urls.py" />
+        <option value="$PROJECT_DIR$/user/views.py" />
         <option value="$PROJECT_DIR$/user/tests.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="954" />
+    <option name="height" value="1200" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -190,11 +200,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="custom_user" type="b2602c69:ProjectViewProjectNode" />
+              <item name="custom_user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="custom_user" type="b2602c69:ProjectViewProjectNode" />
+              <item name="custom_user" type="462c0819:PsiDirectoryNode" />
               <item name="custom_user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -206,7 +222,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,8 +255,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django tests.Test: user.tests.UserTest.test_should_send_signal_on_save">
-    <configuration name="Test: user.tests.UserTest.test_same_emails" type="DjangoTestsConfigurationType" temporary="true">
+  <component name="RunManager" selected="Django tests.Test: user.tests.UserTest.test_redirect_verified_user_from_confirm">
+    <configuration name="Test: user.tests.UserTest.test_confirm_view" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <module name="custom_user" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,14 +269,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="user.tests.UserTest.test_same_emails" />
+      <option name="TARGET" value="user.tests.UserTest.test_confirm_view" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method v="2" />
     </configuration>
-    <configuration name="Test: user.tests.UserTest.test_should_send_signal_on_save" type="DjangoTestsConfigurationType" temporary="true">
+    <configuration name="Test: user.tests.UserTest.test_new_user_verification" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <module name="custom_user" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,14 +288,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="user.tests.UserTest.test_should_send_signal_on_save" />
+      <option name="TARGET" value="user.tests.UserTest.test_new_user_verification" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method v="2" />
     </configuration>
-    <configuration name="Test: user.tests.UserTest.test_users_with_same_emails" type="DjangoTestsConfigurationType" temporary="true">
+    <configuration name="Test: user.tests.UserTest.test_not_show_confirm_view_to_verified" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <module name="custom_user" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -294,12 +307,49 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="user.tests.UserTest.test_users_with_same_emails" />
+      <option name="TARGET" value="user.tests.UserTest.test_not_show_confirm_view_to_verified" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method v="2" />
+    </configuration>
+    <configuration name="Test: user.tests.UserTest.test_redirect_annonymous_user_from_confirm" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="custom_user" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="user.tests.UserTest.test_redirect_annonymous_user_from_confirm" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="custom_user" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="user.tests.UserTest.test_redirect_verified_user_from_confirm" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
     </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="custom_user" />
@@ -319,9 +369,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="custom_user" type="Python.DjangoServer" factoryName="Django server">
       <module name="custom_user" />
@@ -345,20 +392,23 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="true" />
       <option name="customRunCommand" value="runserver" />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Django server.custom_user" />
-      <item itemvalue="Django tests.Test: user.tests.UserTest.test_same_emails" />
-      <item itemvalue="Django tests.Test: user.tests.UserTest.test_users_with_same_emails" />
-      <item itemvalue="Django tests.Test: user.tests.UserTest.test_should_send_signal_on_save" />
       <item itemvalue="Python.manage" />
+      <item itemvalue="Django tests.Test: user.tests.UserTest.test_new_user_verification" />
+      <item itemvalue="Django tests.Test: user.tests.UserTest.test_confirm_view" />
+      <item itemvalue="Django tests.Test: user.tests.UserTest.test_not_show_confirm_view_to_verified" />
+      <item itemvalue="Django tests.Test: user.tests.UserTest.test_redirect_annonymous_user_from_confirm" />
+      <item itemvalue="Django tests.Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Django tests.Test: user.tests.UserTest.test_should_send_signal_on_save" />
-        <item itemvalue="Django tests.Test: user.tests.UserTest.test_users_with_same_emails" />
-        <item itemvalue="Django tests.Test: user.tests.UserTest.test_same_emails" />
+        <item itemvalue="Django tests.Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" />
+        <item itemvalue="Django tests.Test: user.tests.UserTest.test_redirect_annonymous_user_from_confirm" />
+        <item itemvalue="Django tests.Test: user.tests.UserTest.test_not_show_confirm_view_to_verified" />
+        <item itemvalue="Django tests.Test: user.tests.UserTest.test_confirm_view" />
+        <item itemvalue="Django tests.Test: user.tests.UserTest.test_new_user_verification" />
       </list>
     </recent_temporary>
   </component>
@@ -412,101 +462,188 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test__user_tests_UserTest_test_same_emails - 2019.02.15 at 16h 10m 29s.xml">
-      <configuration name="Test: user.tests.UserTest.test_same_emails" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 00h 42m 45s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_same_emails - 2019.02.15 at 16h 15m 54s.xml">
-      <configuration name="Test: user.tests.UserTest.test_same_emails" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 12h 20m 59s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_users_with_same_emails - 2019.02.15 at 16h 20m 08s.xml">
-      <configuration name="Test: user.tests.UserTest.test_users_with_same_emails" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_annonymous_user_from_confirm - 2019.02.17 at 12h 22m 36s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_annonymous_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_users_with_same_emails - 2019.02.15 at 16h 23m 30s.xml">
-      <configuration name="Test: user.tests.UserTest.test_users_with_same_emails" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 12h 27m 26s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_users_with_same_emails - 2019.02.15 at 16h 23m 46s.xml">
-      <configuration name="Test: user.tests.UserTest.test_users_with_same_emails" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 12h 28m 01s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_should_send_signal_on_save - 2019.02.16 at 00h 09m 20s.xml">
-      <configuration name="Test: user.tests.UserTest.test_should_send_signal_on_save" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 12h 29m 18s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_should_send_signal_on_save - 2019.02.16 at 00h 09m 38s.xml">
-      <configuration name="Test: user.tests.UserTest.test_should_send_signal_on_save" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 12h 31m 04s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_should_send_signal_on_save - 2019.02.16 at 00h 09m 58s.xml">
-      <configuration name="Test: user.tests.UserTest.test_should_send_signal_on_save" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 12h 31m 55s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_should_send_signal_on_save - 2019.02.16 at 00h 10m 45s.xml">
-      <configuration name="Test: user.tests.UserTest.test_should_send_signal_on_save" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 12h 32m 21s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
-    <history-entry file="Test__user_tests_UserTest_test_should_send_signal_on_save - 2019.02.16 at 00h 10m 53s.xml">
-      <configuration name="Test: user.tests.UserTest.test_should_send_signal_on_save" configurationId="DjangoTestsConfigurationType" />
+    <history-entry file="Test__user_tests_UserTest_test_redirect_verified_user_from_confirm - 2019.02.17 at 12h 38m 29s.xml">
+      <configuration name="Test: user.tests.UserTest.test_redirect_verified_user_from_confirm" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="7544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="467" y="463" width="974" height="1047" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2045952" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32850778" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24662162" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977476" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="manage.py@custom_user" order="8" weight="0.34336677" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005325" side_tool="true" weight="0.31733334" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32879817" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.2858431" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3298872" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32962137" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49955556" visible="true" weight="0.099574015" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.5004445" side_tool="true" weight="0.09744409" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39911112" />
+      <window_info id="Favorites" order="2" sideWeight="0.5004445" side_tool="true" weight="0.09744409" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="manage.py@custom_user" order="8" weight="0.34336677" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850778" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2635135" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="manage.py@custom_user" order="8" weight="0.34336677" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19146608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32850778" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2635135" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="manage.py@custom_user" order="8" weight="0.34336677" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32879817" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3298872" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32962137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3298872" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32962137" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32879817" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850778" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/user/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="80" column="53" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="80" column="53" lean-forward="true" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Envs/django/Lib/site-packages/django/contrib/admin/options.py" />
     <entry file="uml://Python/django.contrib.admin.options.ModelAdmin" />
     <entry file="file://C:/Envs/django/Lib/site-packages/django/contrib/auth/admin.py" />
@@ -558,16 +695,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/templates/user/home.html" />
-    <entry file="file://$PROJECT_DIR$/user/tokens.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/user/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -575,15 +702,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom_user/settings.py">
+    <entry file="file://$PROJECT_DIR$/user/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/tokens.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="124" column="30" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
+        <state relative-caret-position="299">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$USER_HOME$/Envs/django/lib/python3.6/site-packages/django/test/testcases.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/tcunittest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/account_activation_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="61" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="61" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/managers.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -592,30 +740,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/templates/user/registration/confirm.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/models.py">
+    <entry file="file://$PROJECT_DIR$/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="80" column="53" lean-forward="true" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="566">
+          <caret line="82" column="30" lean-forward="true" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="1196">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -624,18 +762,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="69">
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/views.py">
+    <entry file="file://$PROJECT_DIR$/custom_user/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="3105">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
