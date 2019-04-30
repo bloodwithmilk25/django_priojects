@@ -5,7 +5,7 @@ from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 
 
-class Pictures(models.Model):
+class Picture(models.Model):
     name = models.CharField(max_length=150)
     path = models.ImageField(upload_to='photos')
     page = models.CharField(max_length=150)
@@ -22,7 +22,7 @@ class Contact(models.Model):
     message = models.CharField(max_length=450)
 
     def get_absolute_url(self):
-        return reverse("home")
+        return reverse("portf:home")
 
     def __str__(self):
         return self.first_name + ' ' + self.last_name+ '\n' + self.message

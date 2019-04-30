@@ -1,11 +1,11 @@
 from django.views.generic import TemplateView,ListView,CreateView
-from basicapp.models import Pictures,Contact
-from basicapp.forms import ContactForm
+from .models import Picture, Contact
+from .forms import ContactForm
 
 
 class HomePageView(TemplateView):
     template_name = 'home.html'
-    model = Pictures
+    model = Picture
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -16,7 +16,7 @@ class HomePageView(TemplateView):
 
 class AboutView(TemplateView):
     template_name = 'about.html'
-    model = Pictures
+    model = Picture
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

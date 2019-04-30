@@ -1,14 +1,8 @@
-from django.shortcuts import render
 from django.views.generic import ListView, DetailView
-from blog.models import Post
-from blog.forms import CommentForm
+from .models import Post
+from .forms import CommentForm
 from django.utils import timezone
 from django.shortcuts import render, get_object_or_404, redirect
-from rest_framework import serializers
-from rest_framework import generics
-from rest_framework.response import Response
-from rest_framework.reverse import reverse
-from rest_framework.decorators import api_view
 # Create your views here.
 
 
@@ -45,38 +39,3 @@ def add_comment_to_post(request, pk):
     else:
         form = CommentForm()
     return render(request, 'comment_form.html', {'form': form})
-
-
-# Django REST framework
-
-class PostSerializer(serializers.HyperlinkedModelSerializer):
-    url = serializers.HyperlinkedIdentityField(view_name="blog:post-detail")
-    class Meta:
-        model = Post
-        fields = ('name','text','date','url')
-
-@api_view(['GET', 'POST', ])
-def api_root(request, format=None):
-    """
-    The entry endpoint of our API.
-    """
-    return Response({
-        'posts': reverse('blog:post-list', request=request),
-    })
-
-class PostList(generics.ListCreateAPIView):
-    """
-    API endpoint that represents a list of posts.
-    """
-    model = Post
-    serializer_class = PostSerializer
-    queryset = Post.objects.all()
-
-
-class PostDetail(generics.RetrieveUpdateDestroyAPIView):
-    """
-    API endpoint that represents a single post.
-    """
-    model = Post
-    serializer_class = PostSerializer
-    queryset = Post.objects.all()

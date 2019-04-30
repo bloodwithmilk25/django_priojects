@@ -1,4 +1,4 @@
-from basicapp.models import Contact
+from .models import Contact
 from django import forms
 
 
