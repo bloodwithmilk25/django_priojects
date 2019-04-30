@@ -2,12 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4d0d51e-0bb3-4cf1-a838-e128fa4ad495" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/django_priojects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_priojects.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_user/custom_user/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom_user/custom_user/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-app-api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app-api/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recipe-app-api/app/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipe-app-api/app/app/settings.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Nikita.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Portfolio/portf/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django_priojects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_priojects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/Portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Portfolio/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/Portfolio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/Portfolio/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/static/css/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/static/css/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/static/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/static/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/static/js/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/static/js/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/static/js/master.js" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/static/js/master.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/templates/basicapp/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/templates/portf/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/templates/basicapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/templates/portf/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/templates/basicapp/contact_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/templates/portf/contact_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/templates/basicapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/templates/portf/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/templates/basicapp/new_contact_notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/templates/portf/new_contact_notification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/basicapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/portf/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/blog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/blog/migrations/0002_post_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/blog/migrations/0002_post_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celery_learn/celery_learn/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/celery_learn/celery_learn/settings.py" afterDir="false" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,6 +51,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/django_priojects$Twisted_Trial_for_tests_CoreTest.coverage" NAME="Twisted Trial for tests.CoreTest Coverage Results" MODIFIED="1556379010548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recipe-app-api/app/core" />
   </component>
   <component name="FileEditorManager">
@@ -28,16 +63,48 @@
               <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+=======
+    <SUITE FILE_PATH="coverage/My_Django_Projects$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1556621400693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portfolio/blog/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portfolio/blog/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recipe-app-api/app/core/tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="616">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Portfolio/blog/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -45,16 +112,45 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recipe-app-api/app/app/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="502">
               <caret line="122" column="25" selection-start-line="122" selection-start-column="25" selection-end-line="122" selection-end-column="25" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Portfolio/Portfolio/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>home</find>
+      <find>about</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>portf:home</replace>
+      <replace>portf:about</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\programming\python\My_Django_Projects\Portfolio</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,6 +166,7 @@
         <option value="$PROJECT_DIR$/recipe-app-api/requirements.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/recipe-app-api/Dockerfile" />
         <option value="$PROJECT_DIR$/recipe-app-api/docker-compose.yml" />
         <option value="$PROJECT_DIR$/custom_user/custom_user/settings.py" />
@@ -87,6 +184,33 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/letmeknow/frontend/node_modules" />
+=======
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/exponetiation.py" />
+        <option value="$PROJECT_DIR$/celery_learn/celery_learn/settings.py" />
+        <option value="$PROJECT_DIR$/Portfolio/Portfolio/settings.py" />
+        <option value="$PROJECT_DIR$/Portfolio/portf/models.py" />
+        <option value="$PROJECT_DIR$/Portfolio/portf/templates/portf/base.html" />
+        <option value="$PROJECT_DIR$/Portfolio/Portfolio/urls.py" />
+        <option value="$PROJECT_DIR$/Portfolio/portf/urls.py" />
+        <option value="$PROJECT_DIR$/Portfolio/portf/views.py" />
+        <option value="$PROJECT_DIR$/Portfolio/portf/forms.py" />
+        <option value="$PROJECT_DIR$/Portfolio/portf/apps.py" />
+        <option value="$PROJECT_DIR$/Portfolio/portf/admin.py" />
+        <option value="$PROJECT_DIR$/Portfolio/blog/views.py" />
+        <option value="$PROJECT_DIR$/Portfolio/blog/urls.py" />
+        <option value="$PROJECT_DIR$/Portfolio/blog/models.py" />
+        <option value="$PROJECT_DIR$/Portfolio/blog/forms.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="133" />
+    <option name="y" value="42" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
@@ -102,7 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,6 +245,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="django_priojects" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_priojects" type="462c0819:PsiDirectoryNode" />
               <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
@@ -134,19 +258,32 @@
               <item name="recipe-app-api" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="My_Django_Projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My_Django_Projects" type="462c0819:PsiDirectoryNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="My_Django_Projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="My_Django_Projects" type="462c0819:PsiDirectoryNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="Portfolio" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Portfolio" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,6 +296,32 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server" nameIsGenerated="true">
+      <module name="django_priojects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Nikita\Envs\django\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -173,7 +336,9 @@
       <workItem from="1556308169389" duration="515000" />
       <workItem from="1556362137079" duration="2041000" />
       <workItem from="1556364434531" duration="293000" />
-      <workItem from="1556365511960" duration="3207000" />
+      <workItem from="1556365511960" duration="4083000" />
+      <workItem from="1556468231403" duration="597000" />
+      <workItem from="1556621298543" duration="5507000" />
     </task>
     <servers />
   </component>
@@ -183,9 +348,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6056000" />
+    <option name="totallyTimeSpent" value="13036000" />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="23" width="960" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -201,6 +367,17 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13646056" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32887402" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32887402" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -211,6 +388,13 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4989059" weight="0.32664436" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010941" side_tool="true" weight="0.32995495" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Python Console" order="12" />
@@ -226,6 +410,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
     <layout-to-restore>
+<<<<<<< HEAD
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -233,8 +418,24 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2531983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13646056" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32887402" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32995495" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4989059" weight="0.32664436" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010941" side_tool="true" weight="0.32995495" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Python Console" order="12" />
@@ -307,10 +508,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recipe_app_api/requirements.txt" />
     <entry file="file://$PROJECT_DIR$/recipe_app_api/Dockerfile" />
-    <entry file="file://$PROJECT_DIR$/recipe-app-api/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="72">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="48">
+            <caret line="2" column="45" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe-app-api/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -321,6 +546,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/recipe-app-api/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -339,11 +565,207 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="9" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="9" />
+=======
+    <entry file="file://$PROJECT_DIR$/recipe-app-api/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/exponetiation.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_learn/user/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_learn/user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828">
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_learn/celery_learn/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_learn/celery_learn/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="147" column="35" lean-forward="true" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_learn/publish/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_learn/publish/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_learn/publish/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celery_learn/publish/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/Portfolio/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events_promgruz/events_promgruz/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/letmeknow/letmeknow/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/Portfolio/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/portf/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/portf/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/portf/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/portf/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/portf/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/portf/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/portf/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/blog/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="253">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
         </state>
@@ -394,20 +816,40 @@
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#49#89#0" expanded="true" />
+=======
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/blog/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/recipe-app-api/app/core/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
+=======
+    <entry file="file://$PROJECT_DIR$/Portfolio/blog/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/recipe-app-api/app/core/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -415,6 +857,12 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/Portfolio/Portfolio/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+>>>>>>> 5d58e425fe54754b093a8924461aaf4a0dc0ed0f
         </state>
       </provider>
     </entry>
