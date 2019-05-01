@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
-# Create your tests here.
+# Create your testswf here.
 
 
 class CoreTest(TestCase):
@@ -12,7 +12,7 @@ class CoreTest(TestCase):
         self.assertTrue(user.check_password(password))
 
     def test_new_user_email_normalized(self):
-        email = 'test@AtLondonAtdev.com'
+        email = 'testswf@AtLondonAtdev.com'
         user = get_user_model().object.create_user(email, 'password')
 
         self.assertEqual(user.email, email.lower())
