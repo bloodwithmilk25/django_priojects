@@ -4,7 +4,6 @@ from .serializers import MovieSerializer, DirectorSerializer, TagSerializer
 from rest_framework_bulk import BulkModelViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework import filters
 # Create your views here.
 
 # chaining Q constraints
@@ -18,8 +17,13 @@ from .filters import MovieFilter
 class MovieViewSet(ModelViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
+
     search_fields = 'title',
+
     filter_class = MovieFilter
+
+    ordering_fields = ('title', 'year')
+    ordering = ('year',)
 
     def get_serializer(self, *args, **kwargs):
         """Allowing for bulk create"""
